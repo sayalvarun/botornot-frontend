@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="prompt-text">Enter your prompt here</div>
+      <div className="cards-container">
+        {[...Array(5)].map((_, i) => (
+          <div key={i} className="card">
+            <span className="icon-robot">🤖</span>
+            <div className="card-content">
+              <p>Your text goes here and can be very long up to 140 characters...</p>
+            </div>
+            <span className="icon-human">👤</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

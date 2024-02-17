@@ -1,38 +1,62 @@
-.App {
+/* App.css */
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.prompt-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon-robot, .icon-human {
+  font-size: 50px;
+  position: relative;
+}
+
+ .icon-robot {
+  left: 0;
+}
+
+.icon-human {
+  right: 0;
+} 
+
+.cards-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards-container .card {
+  margin: 20px;
+  max-width: none; /* Remove max-width limitation */
+  width: calc(50ch + 140px); /* 140ch is the width of 140 characters, and add some padding */
+  min-height: 150px; /* Making the card taller */
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.1);
+  padding: 20px;
+  overflow: hidden; /* Prevents text from spilling over */
+  font-size: 20px;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
