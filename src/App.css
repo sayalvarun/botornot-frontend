@@ -76,3 +76,17 @@ body, html {
 .submit-button:hover {
   background-color: darkgreen;
 }
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card.red {
+  background-color: red;
+}
+
+.card.green {
+  background-color: green;
+}
