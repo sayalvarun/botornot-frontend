@@ -16,6 +16,7 @@ function App() {
           </div>
         ))}
       </div>
+      <button className="submit-button">Submit</button>
     </div>
   );
 }
