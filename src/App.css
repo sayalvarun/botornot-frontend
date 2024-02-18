@@ -83,10 +83,10 @@ body, html {
   align-items: center;
 }
 
-.card.red {
-  background-color: red;
+.card.robot {
+  background-color: #4a6182;
 }
 
-.card.green {
-  background-color: green;
+.card.human {
+  background-color: #FF6B6B;
 }
